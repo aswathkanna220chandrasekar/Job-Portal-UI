@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>JobFinder</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#jobs">Find Jobs</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Find Your Dream Job</h1>
+        <p>Explore opportunities and build your career.</p>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search job title or company">
+            <select id="locationFilter">
+                <option value="">All Locations</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Remote">Remote</option>
+            </select>
+            <select id="typeFilter">
+                <option value="">All Job Types</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Internship">Internship</option>
+                <option value="Part-time">Part-time</option>
+            </select>
+
+            <button onclick="searchJobs()">Search</button>
+        </div>
+    </section>
+    <main id="jobs">
+        <h2>Latest Job Opportunities</h2>
+        <p id="jobCount"></p>
+
+        <div id="jobList" class="job-list"></div>
+    </main>
+    <section id="about" class="about">
+        <h2>About JobFinder</h2>
+        <p>JobFinder helps job seekers explore opportunities,
+            discover suitable positions, and take the next step
+            in their careers.</p>
+    </section>
+    <footer>
+        <p>&copy; 2026 JobFinder. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

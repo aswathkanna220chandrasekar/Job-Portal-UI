@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    background: #dbeafe;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 250px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+main {
+    padding: 40px 8%;
+}
+
+main h2 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+#jobCount {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+    border: 1px solid #e5e7eb;
+}
+
+.job-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.job-card p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.job-type {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin: 5px 0 15px;
+    font-size: 13px;
+}
+
+.job-card button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e5e7eb;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.7;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .job-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    .search-box button {
+        width: 100%;
+    }
+
+    .job-list {
+        grid-template-columns: 1fr;
+    }
+}
